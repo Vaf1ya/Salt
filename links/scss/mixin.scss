@@ -1,0 +1,49 @@
+@mixin font($family, $size, $height, $t-align,$v-align,$color ) {
+    font-family: $family;
+    font-size: $size;
+    line-height: $height;
+    text-align: $t-align;
+    vertical-align: $v-align;
+    color: $color;
+}
+
+@mixin grid($cols, $margen, $margenb, $padding) {
+    float: left;
+    margin-right: $margen;
+    margin-bottom: $margenb;
+    padding-top: $padding;
+
+    &:nth-child(#{$cols}n) {
+        margin-right: 0;
+    }
+}
+
+@mixin grid-padding($cols, $padding) {
+    &:nth-child(#{$cols}n) {
+        padding-top: $padding;
+    }
+}
+
+@mixin grid-marginB($cols, $margin) {
+    &:nth-child(#{$cols}n) {
+        margin-bottom: $margin;
+    }
+}
+
+@mixin input-width($cols, $width) {
+    &:nth-child(#{$cols}n) {
+        width: $width;
+    }
+}
+
+@mixin padding($cols, $padding) {
+    &:nth-child(#{$cols}n) {
+        padding-right: $padding;
+    }
+}
+
+@mixin paddingL($cols, $padding) {
+    &:nth-child(#{$cols}n) {
+        padding-left: $padding;
+    }
+}
