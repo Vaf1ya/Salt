@@ -125,7 +125,7 @@ button:hover {
     display: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
     .max-width {
         display: none;
     }
@@ -136,7 +136,7 @@ button:hover {
 
 body {
     min-width: 1600px;
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         min-width: 0;
     }
 }
@@ -146,7 +146,7 @@ main,
 footer {
     width: 1600px;
     margin: 0 auto;
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         width: 375px;
     }
 }
@@ -156,7 +156,7 @@ footer {
 header {
     background: url(../img/headerBg.svg) 50% 0 no-repeat;
     height: 810px;
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         background: url(../img/headerBg.svg) 50% -21px no-repeat;
         height: 789px;
         padding: 28px 33px 53px 28px;
@@ -212,7 +212,7 @@ header {
         }
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         padding: 0 0 55.62px;
         img {
             width: 39px;
@@ -247,7 +247,7 @@ header {
 
 .header__menu-icon {
     display: none;
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         z-index: 5;
         display: block;
         position: relative;
@@ -256,7 +256,7 @@ header {
         cursor: pointer;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
     .header__menu-icon span,
     .header__menu-icon::before,
     .header__menu-icon::after {
@@ -303,21 +303,20 @@ header {
         border-radius: 4px;
         @include font('ProximaNova-Bold', 14px, 45px, left, top, #fff);
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         padding: 0;
         display: flex;
         flex-flow: column wrap;
-        @media (max-width: 375px) {
-            .header__content-text {
-                order: 2;
-            }
-            .header__content-logo {
-                width: 99.25px;
-                height: 82.36px;
-                order: 1;
-                margin-bottom: 65.03px;
-            }
+        .header__content-text {
+            order: 2;
         }
+        .header__content-logo {
+            width: 99.25px;
+            height: 82.36px;
+            order: 1;
+            margin-bottom: 65.03px;
+        }
+
         h1 {
             margin-right: 0;
             @include font('ProximaNova-Bold', 32px, 40px, left, top, #fff);
@@ -361,7 +360,7 @@ header {
         display: block;
         padding: 0 0 12px;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         display: none;
     }
 }
@@ -413,7 +412,7 @@ input[name='r'] {
         height: 71px;
         width: 62px;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         padding: 68px 0 0;
         span {
             @include font('ProximaNova-Bold', 13px, 20px, left, top, #fff);
@@ -445,7 +444,7 @@ input[name='r'] {
         @include font('ProximaNova-Bold', 16px, 18px, center, top, #7050e5);
         letter-spacing: -2%;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         display: block;
         justify-content: center;
         padding: 80px 0 32px 0;
@@ -483,7 +482,7 @@ input[name='r'] {
             border-bottom: none;
         }
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         padding: 48px 40px 48px 52px;
         .about__title {
             display: flex;
@@ -523,7 +522,7 @@ input[name='r'] {
         @include font('ProximaNova-Regular', 15px, 19px, left, top, #878787);
         letter-spacing: -0.8%;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         display: inline-block;
         justify-content: center;
         flex-wrap: none;
@@ -555,7 +554,7 @@ input[name='r'] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         padding: 100px 0px 181px 28px;
         display: inline-block;
         justify-content: center;
@@ -577,7 +576,7 @@ input[name='r'] {
         background: #ff8b00;
         @include font('ProximaNova-Bold', 14px, 18px, left, top, #fff);
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         h1 {
             @include font('ProximaNova-Bold', 24px, 32px, left, top, #7050e5);
         }
@@ -631,7 +630,7 @@ input[name='r'] {
             text-transform: uppercase;
         }
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         width: 319px;
         height: 196px;
         div {
@@ -654,7 +653,7 @@ input[name='r'] {
     video {
         width: 724px;
         height: 444px;
-        @media (max-width: 375px) {
+        @media (max-width: 500px) {
             width: 319px;
             height: 196px;
         }
@@ -717,7 +716,7 @@ input[name='r'] {
             @include font('ProximaNova-Bold', 14px, 18px, left, top, #fff);
         }
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         padding: 40px 36px 40px 28px;
         margin-bottom: 97px;
         display: inline-block;
@@ -758,7 +757,7 @@ input[name='r'] {
     padding: 56px 32px 32px 224px;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         width: 375px;
         padding: 60px 38px 80px 38px;
         display: inline-block;
@@ -768,7 +767,7 @@ input[name='r'] {
 .footer__twitterForm {
     width: 295px;
     margin-right: 120px;
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         margin-right: 0;
         margin-bottom: 60px;
     }
@@ -845,7 +844,7 @@ input[name='r'] {
         padding-left: 10px;
         transition: 0.5s;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         display: inline-block;
         display: flex;
         flex-wrap: wrap;
@@ -867,7 +866,7 @@ input[name='r'] {
 
 .footer__nav-central-block {
     width: 300px;
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         width: 120px;
     }
 }
@@ -881,7 +880,7 @@ input[name='r'] {
         text-transform: uppercase;
         @include font('ProximaNova-Bold', 14px, 20px, left, top, #ff8b00);
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         img {
             padding: 0 8px 12px 0;
         }
@@ -891,7 +890,7 @@ input[name='r'] {
 .footer__logo {
     display: flex;
     align-items: flex-end;
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         display: flex;
         justify-content: center;
         padding-top: 72px;
@@ -915,7 +914,7 @@ input[name='r'] {
         width: 9px;
         height: 10px;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         padding: 37px 41px 38px 38px;
         p {
             @include font('Raleway-Medium', 8px, 20px, left, top, #fff);
