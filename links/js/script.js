@@ -40,7 +40,19 @@ window.addEventListener('DOMContentLoaded', function (e) {
                 e.preventDefault();
             }
         }
-    }
+    }    
+    
+    //изминение меню слайдера
+
+    const navSlider = document.querySelector('.header__slider-nav');
+    const img = navSlider.querySelectorAll('img');
+    navSlider.addEventListener('click', (e) => {
+        
+        img.forEach((el) => {
+            el.setAttribute('src', './links/img/sliderNavPassiv.svg');
+        });
+        e.target.setAttribute('src', './links/img/sliderNavActiv.svg');
+    });
 
     //Меню Бургер
 
